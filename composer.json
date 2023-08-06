@@ -1,0 +1,13 @@
+{
+    "autoload":{
+     
+                  "psr-4":{
+
+                            "LOMU\\":"app" 
+                  }   
+
+    },
+    "require": {
+        "rakit/validation": "^1.4"
+    }
+}
