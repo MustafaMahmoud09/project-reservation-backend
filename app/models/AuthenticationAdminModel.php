@@ -19,7 +19,7 @@ class AuthenticationAdminModel extends Model
       function register($name, $email, $password)
       {
             $query = 'INSERT INTO `admin`(`name`,`email`,`password`)VALUES(?,?,?)';
-            $query = parent::connection()->prepare($query);
+            $query = parent::connection()->prepare(query: $query);
             try {
                   $query->execute([$name, $email, $password]);
                   return true;

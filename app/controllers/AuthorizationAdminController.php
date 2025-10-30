@@ -134,6 +134,6 @@ class AuthorizationAdminController extends Controller
       function reservation()
       {
             $data = $this->authorizationAdminModel->selectReservation();
-            parent::view('dashboard' . DS . 'authorization' . DS . 'reservation.php', ['allReservation' => $data]);
+            parent::view('dashboard' . DS . 'authorization' . DS . 'reservation.php', ['allReservation' => $data, 'nameAdmin' => $this->adminName]);
       }
 }
