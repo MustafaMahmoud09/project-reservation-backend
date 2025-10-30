@@ -1,15 +1,13 @@
 <?php
 
- namespace LOMU\controllers;
+namespace LOMU\controllers;
 
- class ErrorController{
+use LOMU\core\Controller;
 
-   function notFound(){
-
-          echo "ERROR";
-
-   }
-
- } 
-
- ?>
+class ErrorController extends Controller
+{
+  function notFound()
+  {
+    parent::view("error" . DS . "error.php", ['eNumber'=> 404]);
+  }
+}

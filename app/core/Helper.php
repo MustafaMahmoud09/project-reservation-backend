@@ -1,15 +1,11 @@
 <?php
 
- namespace LOMU\core;
+namespace LOMU\core;
 
- class Helper{
-
-    static function redirect($path){
-
-          header("LOCATION: ".DOMAIN.$path);
-
-    } 
-
- }
-
-?>
+class Helper
+{
+      static function redirect($path)
+      {
+            header("LOCATION: " . DOMAIN . $path);
+      }
+}

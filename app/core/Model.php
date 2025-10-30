@@ -1,15 +1,13 @@
 <?php
 
- namespace LOMU\core;
- use PDO;
+namespace LOMU\core;
 
- class Model{
+use PDO;
 
-   protected function connection(){
-
-       return new PDO(DNS,USERNAME,PASSWORD);
-     
-   }
- }
-
-?>
+class Model
+{
+  protected function connection()
+  {
+    return new PDO(DNS, USERNAME, PASSWORD);
+  }
+}

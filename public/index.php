@@ -24,7 +24,7 @@ use LOMU\core\App;
 
   define("HOST","localhost"); 
 
-  define("DBNAME","rev_mvc_pro");
+  define("DBNAME","reversation_dp");
 
   define("USERNAME","root");
 
